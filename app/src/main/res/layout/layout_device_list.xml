@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view_paired_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="5dp"
+        android:text="@string/show_device"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/list_view_paired_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" />
+
+    <TextView
+        android:id="@+id/text_view_other_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="5dp"
+        android:text="@string/title_other_device"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/list_view_other_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scan"
+        android:text="@string/button_scan_device"
+        android:textAppearance="?android:textAppearanceMedium" />
+</LinearLayout>
